@@ -1,0 +1,28 @@
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import SaludMental from "./views/SaludMental";
+import Transparencia from "./views/Transparencia";
+import EducacionEmocional from "./views/EducacionEmocional";
+import Articulos from "./views/Articulos";
+import Galeria from "./views/Galeria";
+import Inscribirse from "./views/Inscribirse";
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/salud-mental" element={<SaludMental />} />
+        <Route path="/transparencia" element={<Transparencia />} />
+        <Route path="/educacion-emocional" element={<EducacionEmocional />} />
+        <Route path="/articulos" element={<Articulos />} />
+        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/inscribirse" element={<Inscribirse />} />
+      </Routes>
+    </HashRouter>
+  </React.StrictMode>
+);
