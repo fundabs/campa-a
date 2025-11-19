@@ -9,11 +9,13 @@ import EducacionEmocional from "./views/EducacionEmocional";
 import Articulos from "./views/Articulos";
 import Galeria from "./views/Galeria";
 import Inscribirse from "./views/Inscribirse";
+import ScrollToTop from "./componentes/ScrollToHash";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/salud-mental" element={<SaludMental />} />

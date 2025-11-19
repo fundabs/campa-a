@@ -24,10 +24,20 @@ export default function App() {
     });
   }, []);
 
+  // --- Declara la lista de videos AQUÍ (antes del return) ---
+  const videos = [
+    "https://www.youtube.com/embed/9yd0dQ10t0g",
+    "https://www.youtube.com/embed/vtFjFbmEEIY",
+    "https://www.youtube.com/embed/JNvyKsKNOA8",
+    "https://www.youtube.com/embed/71AWW0GcqII",
+    "https://www.youtube.com/embed/OYaLoRu8bBg",
+    "https://www.youtube.com/embed/lB_j9NJza5Q",
+  ];
+
   return (
     <>
       {/* HERO PROFESIONAL */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
+      <header className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pb-16">
         {/* Video de fondo */}
         <video
           autoPlay
@@ -44,26 +54,26 @@ export default function App() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/60 to-black/30"></div>
 
         {/* Contenido */}
-        <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           {/* Badge */}
           <div
-            className="inline-flex items-center gap-4 bg-white/20 backdrop-blur-lg 
-            border border-white/30 px-8 py-4 rounded-full mb-8"
+            className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-lg 
+      border border-white/30 px-5 py-2 rounded-full mb-4"
             data-aos="fade-up"
           >
             <img
               src="/logo-Partido-Politico-Dignidad-Compromiso.jpg"
               alt="Dignidad & Compromiso"
-              className="h-10 w-10 rounded-full"
+              className="h-8 w-8 rounded-full"
             />
-            <span className="text-xl font-bold tracking-wider">
+            <span className="text-base md:text-lg font-bold tracking-wider">
               DIGNIDAD & COMPROMISO
             </span>
           </div>
 
           {/* Nombre */}
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight"
+            className="text-3xl md:text-5xl lg:text-6xl font-black mb-3 leading-tight"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -73,38 +83,36 @@ export default function App() {
 
           {/* Subtítulo */}
           <p
-            className="text-xl md:text-3xl font-light mb-10 max-w-3xl mx-auto"
+            className="text-base md:text-xl font-light mb-6 max-w-2xl mx-auto"
             data-aos="fade-up"
             data-aos-delay="500"
           >
             Psicóloga dedicada a la salud mental comunitaria · Bogotá 2026
             <br />
-            <span className="font-semibold text-orange-300 text-2xl md:text-4xl">
+            <span className="font-semibold text-orange-300 text-lg md:text-2xl">
               Por una ciudad con dignidad y esperanza
             </span>
           </p>
 
           {/* Apoyo */}
           <div
-            className="bg-white/15 backdrop-blur-md rounded-2xl p-8 mb-12 max-w-lg mx-auto border border-white/20"
+            className="bg-white/15 backdrop-blur-md rounded-xl p-5 mb-8 max-w-md mx-auto border border-white/20"
             data-aos="fade-up"
             data-aos-delay="700"
           >
-            <p className="text-lg font-medium flex items-center justify-center gap-3">
-              <Heart className="w-7 h-7 text-red-400 fill-current animate-pulse" />
-              Mi apoyo incondicional a Sergio Fajardo
-              <Heart className="w-7 h-7 text-red-400 fill-current animate-pulse" />
+            <p className="text-sm md:text-base font-medium flex items-center justify-center gap-2">
+              ❤️ Mi apoyo incondicional a Sergio Fajardo ❤️
             </p>
             <a
               href="https://sergiofajardo.co"
               target="_blank"
-              className="text-orange-300 hover:text-white text-sm mt-2 inline-block transition"
+              className="text-orange-300 hover:text-white text-xs mt-1 inline-block transition"
             >
               Conocer su visión →
             </a>
           </div>
 
-          {/* Botones Responsive */}
+          {/* Botones */}
           <div
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center"
             data-aos="fade-up"
@@ -112,10 +120,16 @@ export default function App() {
           >
             <a
               href="#propuestas"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById("propuestas");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
               className="group relative overflow-hidden bg-orange-500 hover:bg-orange-400 
-              text-purple-900 px-6 sm:px-10 py-4 sm:py-5 rounded-full font-bold sm:font-extrabold 
-              text-lg sm:text-xl shadow-2xl transform hover:scale-105 hover:-translate-y-1 
-              transition-all duration-300 text-center"
+        text-purple-900 px-5 sm:px-8 py-3 sm:py-3 rounded-full font-semibold 
+        text-base sm:text-lg shadow-xl transform hover:scale-105 transition-all text-center"
             >
               Conoce mis Propuestas
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition"></div>
@@ -124,8 +138,8 @@ export default function App() {
             <a
               href="#inscribirse"
               className="group border-2 border-white/70 hover:border-white hover:bg-white/20 
-              backdrop-blur px-6 sm:px-10 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl 
-              transform hover:scale-105 hover:-translate-y-1 transition duration-300 text-center"
+        backdrop-blur px-5 sm:px-8 py-3 sm:py-3 rounded-full font-semibold text-base sm:text-lg 
+        transform hover:scale-105 transition duration-300 text-center"
             >
               Únete al Cambio
             </a>
@@ -134,6 +148,7 @@ export default function App() {
       </header>
 
       {/* NAV */}
+      {/* NAV — CLICK HANDLER para scroll suave sin cambiar vista */}
       <nav className="sticky top-0 bg-white/95 backdrop-blur-md shadow-lg z-50">
         <div
           className="
@@ -145,30 +160,26 @@ export default function App() {
       overflow-hidden
     "
         >
-          <a
-            href="#propuestas"
-            className="text-purple-700 hover:text-orange-500 transition"
-          >
-            Propuestas
-          </a>
-          <a
-            href="#trayectoria"
-            className="text-purple-700 hover:text-orange-500 transition"
-          >
-            Trayectoria
-          </a>
-          <a
-            href="#videos"
-            className="text-purple-700 hover:text-orange-500 transition"
-          >
-            Videos
-          </a>
-          <a
-            href="#apoyo"
-            className="text-purple-700 hover:text-orange-500 transition"
-          >
-            Apóyanos
-          </a>
+          {["propuestas", "trayectoria", "videos", "apoyo"].map((id) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById(id);
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                  // actualizar hash en la URL sin disparar HashRouter a otra "ruta"
+                  window.history.replaceState(null, "", `#${id}`);
+                }
+              }}
+              className="text-purple-700 hover:text-orange-500 transition cursor-pointer"
+            >
+              {id === "apoyo"
+                ? "Apóyanos"
+                : id.charAt(0).toUpperCase() + id.slice(1)}
+            </a>
+          ))}
         </div>
       </nav>
 
@@ -188,21 +199,21 @@ export default function App() {
                 icon: Brain,
                 title: "Salud Mental para Todos",
                 desc: "Centros de escucha gratuitos en cada localidad...",
-                link: "/salud-mental", // ✔ Página a redirigir
+                link: "/salud-mental",
                 delay: 0,
               },
               {
                 icon: Shield,
                 title: "Transparencia Absoluta",
                 desc: "Plataformas digitales de rendición de cuentas...",
-                link: "/Transparencia", // ✔ No tiene página
+                link: "/Transparencia",
                 delay: 150,
               },
               {
                 icon: Users,
                 title: "Educación Emocional",
                 desc: "Talleres integrados en colegios y empresas...",
-                link: "/educacion-emocional", // ✔ No tiene página
+                link: "/educacion-emocional",
                 delay: 300,
               },
             ].map((p, i) => (
@@ -242,45 +253,56 @@ export default function App() {
       </section>
 
       {/* TRAYECTORIA */}
-      <section id="trayectoria" className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-6xl font-black text-center text-purple-900 mb-16">
+      <section id="trayectoria" className="py-28 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Título */}
+          <h2 className="text-4xl md:text-6xl font-extrabold text-center text-purple-900 mb-20">
             Mi Compromiso Real
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h3 className="text-3xl font-bold text-purple-900 mb-6">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            {/* Texto */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-purple-900 mb-6">
                 Psicóloga Clínica • Matrícula 3204011554
               </h3>
-              <p className="text-lg leading-relaxed mb-8">
-                Egresada de la Universidad de Colombia, experta en
-                hipnoterapia...
+
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-10">
+                Egresada de la Universidad de Colombia, experta en hipnoterapia
+                y acompañamiento emocional. Con más de 15 años de experiencia en
+                intervención psicológica y trabajo comunitario.
               </p>
 
-              <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow">
-                  <Newspaper className="w-8 h-8 text-purple-600" />
+              {/* Tarjetas */}
+              <div className="space-y-5">
+                {/* Artículos */}
+                <div className="flex items-center gap-5 p-5 bg-white border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition">
+                  <Newspaper className="w-10 h-10 text-purple-700" />
                   <div>
-                    <strong>Artículos destacados</strong>
+                    <strong className="text-lg text-purple-900">
+                      Artículos destacados
+                    </strong>
                     <br />
                     <Link
                       to="/articulos"
-                      className="text-orange-500 hover:underline font-medium"
+                      className="text-orange-500 hover:underline text-md font-semibold"
                     >
                       El Tiempo: Salud mental en crisis →
                     </Link>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow">
-                  <Camera className="w-8 h-8 text-purple-600" />
+                {/* Galería */}
+                <div className="flex items-center gap-5 p-5 bg-white border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition">
+                  <Camera className="w-10 h-10 text-purple-700" />
                   <div>
-                    <strong>Galería de impacto</strong>
+                    <strong className="text-lg text-purple-900">
+                      Galería de impacto
+                    </strong>
                     <br />
                     <Link
                       to="/galeria"
-                      className="text-orange-500 hover:underline font-medium"
+                      className="text-orange-500 hover:underline text-md font-semibold"
                     >
                       Ver Fotos →
                     </Link>
@@ -289,10 +311,11 @@ export default function App() {
               </div>
             </div>
 
-            <div>
+            {/* Imagen */}
+            <div className="flex justify-center">
               <img
                 src="/foto_perfil.png"
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-3xl shadow-2xl w-full max-w-md border-4 border-white"
                 alt="María del Pilar"
               />
             </div>
@@ -308,14 +331,14 @@ export default function App() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((v) => (
+            {videos.map((url, index) => (
               <div
-                key={v}
+                key={index}
                 className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg"
               >
                 <div className="aspect-video">
                   <iframe
-                    src={`https://www.youtube.com/embed/TU_VIDEO_ID_${v}?rel=0`}
+                    src={url}
                     className="w-full h-full"
                     allowFullScreen
                   ></iframe>
@@ -341,7 +364,7 @@ export default function App() {
           </p>
 
           <a
-            href="https://wa.me/57TU_NUMERO_WHATSAPP"
+            href="https://wa.me/573204011554"
             className="
         inline-block
         bg-white text-purple-900 

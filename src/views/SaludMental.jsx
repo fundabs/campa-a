@@ -48,7 +48,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/salud-mental/ciudad-bolivar.jpg"
+                  src="/public/ciudad_bolivar.jpg"
                   alt="Ciudad Bolívar"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -71,7 +71,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/salud-mental/kennedy-taller.jpg"
+                  src="/public/anciedad.jpeg"
                   alt="Kennedy"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -86,6 +86,91 @@ export default function SaludMental() {
                 <p className="text-gray-700">
                   Programa piloto en 12 colegios con reducción comprobada de
                   ansiedad.
+                </p>
+              </div>
+            </article>
+
+            <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/public/emociones.jpeg"
+                  alt="Suba"
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">
+                  Suba
+                </span>
+                <h3 className="text-2xl font-bold text-purple-900 mt-4 mb-3">
+                  850 familias acompañadas
+                </h3>
+                <p className="text-gray-700">
+                  Estrategias de regulación emocional aplicadas en hogares con
+                  resultados sobresalientes.
+                </p>
+              </div>
+            </article>
+            <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/public/comunidad.jpeg"
+                  alt="Bosa"
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">
+                  Bosa
+                </span>
+                <h3 className="text-2xl font-bold text-purple-900 mt-4 mb-3">
+                  1.050 ciudadanos capacitados
+                </h3>
+                <p className="text-gray-700">
+                  Talleres de bienestar emocional y rutas de apoyo psicológico
+                  para la comunidad.
+                </p>
+              </div>
+            </article>
+            <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/public/Imagen6.png"
+                  alt="Engativá"
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">
+                  Engativá
+                </span>
+                <h3 className="text-2xl font-bold text-purple-900 mt-4 mb-3">
+                  600 jóvenes empoderados
+                </h3>
+                <p className="text-gray-700">
+                  Intervenciones en colegios enfocadas en liderazgo y salud
+                  mental preventiva.
+                </p>
+              </div>
+            </article>
+            <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/public/mujeres empoderadas.jpg"
+                  alt="Teusaquillo"
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">
+                  Teusaquillo
+                </span>
+                <h3 className="text-2xl font-bold text-purple-900 mt-4 mb-3">
+                  920 mujeres fortalecidas
+                </h3>
+                <p className="text-gray-700">
+                  Procesos psicoeducativos que fortalecieron autoestima,
+                  resiliencia y autocuidado.
                 </p>
               </div>
             </article>
