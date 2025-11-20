@@ -130,7 +130,7 @@ export default function App() {
               }}
               className="group relative overflow-hidden bg-orange-500 hover:bg-orange-400 
         text-purple-900 px-5 sm:px-8 py-3 sm:py-3 rounded-full font-semibold 
-        text-base sm:text-lg shadow-xl transform hover:scale-105 transition-all text-center"
+        text-base sm:text-lg shadow-xl transform hover:scale-105 transition-all text-center "
             >
               Conoce mis Propuestas
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition"></div>
@@ -308,7 +308,7 @@ export default function App() {
                       to="/articulos"
                       className="text-orange-500 hover:underline text-md font-semibold"
                     >
-                      El Tiempo: Salud mental en crisis →
+                      Salud mental en crisis →
                     </Link>
                   </div>
                 </div>
