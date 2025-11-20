@@ -218,12 +218,13 @@ export default function Articulos() {
           </div>
           <div className="mt-20 text-center">
             <h3 className="text-3xl font-bold text-purple-900 mb-8">
-              Video: La Salud Menta y Su Importancia
+              Video: LA ESPECIALISTA MARÍA DEL PILAR GARCÍA NOS HABLA DE LA
+              HIPNOSIS CLÍNICA Y SUS BENEFICIOS
             </h3>
             <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
               <iframe
                 className="w-full aspect-video"
-                src="https://www.youtube.com/embed/PCNqTbzvfWo" // Reemplaza con un video real de El Tiempo o tuyo
+                src="https://www.youtube.com/embed/oUiBXC8ucSQ" // Reemplaza con un video real de El Tiempo o tuyo
                 title="Salud mental en crisis Bogotá"
                 allowFullScreen
               />
