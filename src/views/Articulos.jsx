@@ -34,9 +34,8 @@ export default function Articulos() {
           </h1>
 
           <p className="mt-10 text-xl sm:text-3xl font-light max-w-4xl mx-auto">
-            Lo que El Tiempo y otros medios dicen sobre la emergencia en Bogotá.
-            Mi compromiso: actuar ahora con centros gratuitos y prevención
-            masiva.
+            Lo medios dicen sobre la emergencia en Bogotá. <br></br>Mi
+            compromiso: actuar ahora con centros gratuitos y prevención masiva.
           </p>
 
           <div className="mt-16 flex flex-col sm:flex-row gap-8 justify-center text-2xl font-black">
@@ -65,8 +64,8 @@ export default function Articulos() {
             Artículos destacados
           </h2>
           <p className="text-center text-xl text-gray-700 mb-16 max-w-3xl mx-auto">
-            Cobertura en El Tiempo y medios nacionales sobre la crisis de salud
-            mental en Bogotá y mis propuestas para resolverla.
+            Cobertura en medios nacionales sobre la crisis de salud mental en
+            Bogotá y mis propuestas para resolverla.
           </p>
 
           <div className="space-y-12">
