@@ -8,6 +8,7 @@ import {
   Youtube,
   Newspaper,
   Camera,
+  PlayCircle,
   ArrowRight,
   Users,
   Brain,
@@ -62,7 +63,7 @@ export default function App() {
             data-aos="fade-up"
           >
             <img
-              src="/logo-Partido-Politico-Dignidad-Compromiso.jpg"
+              src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/logo-Partido-Politico-Dignidad-Compromiso_k4uys7.jpg"
               alt="Dignidad & Compromiso"
               className="h-8 w-8 rounded-full"
             />
@@ -255,25 +256,45 @@ export default function App() {
       {/* TRAYECTORIA */}
       <section id="trayectoria" className="py-28 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          {/* Título */}
+          {/* TÍTULO */}
           <h2 className="text-4xl md:text-6xl font-extrabold text-center text-purple-900 mb-20">
-            Mi Compromiso Real
+            Mi Compromiso Real con Bogotá
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            {/* Texto */}
+          <div className="grid lg:grid-cols-2 gap-20 items-start">
+            {/* COLUMNA IZQUIERDA – TEXTO */}
             <div className="flex flex-col justify-center">
               <h3 className="text-3xl md:text-4xl font-bold text-purple-900 mb-6">
-                Psicóloga Clínica • Matrícula 3204011554
+                Psicóloga Clínica • Matrícula Profesional 3204011554
               </h3>
 
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-10">
-                Egresada de la Universidad de Colombia, experta en hipnoterapia
-                y acompañamiento emocional. Con más de 15 años de experiencia en
-                intervención psicológica y trabajo comunitario.
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                Egresada de la Universidad Nacional de Colombia, especialista en
+                hipnoterapia clínica y acompañamiento emocional. Más de 15 años
+                trabajando hombro a hombro con niños, jóvenes, madres cabeza de
+                familia y comunidades enteras de Bogotá.
               </p>
 
-              {/* Tarjetas */}
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-10 font-medium bg-purple-50 p-6 rounded-2xl border-l-4 border-orange-500">
+                <strong>Mi compromiso es claro:</strong>
+                <br />
+                Si me dan la confianza en las elecciones a la Cámara de
+                Representantes por Bogotá en marzo de 2026, impulsaré proyectos
+                que garanticen acceso real a atención emocional, prevención
+                temprana y programas gratuitos para niños, jóvenes, adultos y
+                familias. Dedicaré cada día de mi curul a que la salud mental
+                deje de ser un lujo y se convierta en un derecho real para todos
+                los bogotanos.
+              </p>
+
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-10">
+                Impulsaré proyectos de ley para atención psicológica gratuita en
+                las 20 localidades, prevención del suicidio juvenil, programas
+                de salud mental en colegios públicos y apoyo emocional a
+                primeros respondedores y población vulnerable.
+              </p>
+
+              {/* TARJETAS */}
               <div className="space-y-5">
                 {/* Artículos */}
                 <div className="flex items-center gap-5 p-5 bg-white border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition">
@@ -308,15 +329,46 @@ export default function App() {
                     </Link>
                   </div>
                 </div>
+
+                {/* Video */}
+                <div className="flex items-center gap-5 p-5 bg-gradient-to-r from-purple-700 to-purple-900 text-white rounded-2xl shadow-lg hover:shadow-xl transition">
+                  <PlayCircle className="w-10 h-10" />
+                  <div>
+                    <strong className="text-lg">
+                      Mi video de compromiso con Bogotá
+                    </strong>
+                    <br />
+                    <a
+                      href="https://www.youtube.com/watch?v=TU_VIDEO_ID"
+                      target="_blank"
+                      className="text-orange-300 hover:text-orange-100 underline text-md font-semibold"
+                    >
+                      Ver video completo →
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Imagen */}
-            <div className="flex justify-center">
+            {/* COLUMNA DERECHA – FOTO + FOTO */}
+            <div className="flex flex-col items-center gap-10">
+              {/* Foto principal */}
               <img
                 src="/foto_perfil.png"
-                className="rounded-3xl shadow-2xl w-full max-w-md border-4 border-white"
-                alt="María del Pilar"
+                className="rounded-3xl shadow-2xl w-full max-w-md border-4 border-white mb-5"
+                alt="María del Pilar - Candidata a la Cámara por Bogotá 2026"
+              />
+
+              {/* Segunda foto */}
+              <img
+                src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763656070/maria_politica/cerebron_orn4vp.png"
+                className="rounded-3xl shadow-xl w-full max-w-md border-4 border-white object-cover mb-5"
+                alt="Trabajo comunitario en Bogotá"
+              />
+              <img
+                src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763655720/maria_politica/tratamiento_n_kcrehq.png"
+                className="rounded-3xl shadow-xl w-full max-w-md border-4 border-white object-cover"
+                alt="Trabajo comunitario en Bogotá"
               />
             </div>
           </div>
@@ -388,7 +440,7 @@ export default function App() {
       <footer className="bg-purple-950 text-white py-12">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <img
-            src="/logo-Partido-Politico-Dignidad-Compromiso.jpg"
+            src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/logo-Partido-Politico-Dignidad-Compromiso_k4uys7.jpg"
             className="h-16 mx-auto mb-4"
           />
           <p className="text-xl mb-6">María del Pilar García • Bogotá 2026</p>

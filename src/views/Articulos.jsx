@@ -75,8 +75,8 @@ export default function Articulos() {
               {/* Imagen principal */}
               <div className="aspect-[16/9] overflow-hidden relative">
                 <img
-                  src="/articulos/salud-mental-crisis.jpg"
-                  alt="Portada El Tiempo: Salud mental en crisis Bogotá"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763657576/maria_politica/camara_publicacion_fg4r1g.png"
+                  alt="Salud mental en crisis Bogotá"
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
                 <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold">
@@ -88,13 +88,13 @@ export default function Articulos() {
                 {/* Logo El Tiempo */}
                 <div className="flex items-center gap-3 mb-6">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/El_Tiempo_logo.svg/512px-El_Tiempo_logo.svg.png"
-                    alt="El Tiempo"
+                    src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/logo-Partido-Politico-Dignidad-Compromiso_k4uys7.jpg"
+                    alt="Dignidad y compromiso"
                     className="h-8 opacity-80"
                   />
                   <Calendar className="w-5 h-5 text-gray-500" />
                   <span className="text-sm text-gray-500">
-                    18 de noviembre de 2025
+                    05 de noviembre de 2024
                   </span>
                 </div>
 
@@ -123,7 +123,7 @@ export default function Articulos() {
                 </blockquote>
 
                 <a
-                  href="https://www.eltiempo.com/bogota/salud-mental-en-crisis-bogota-2025"
+                  href="https://www.camara.gov.co/crisis-de-salud-mental-en-colombia-un-panorama-desalentador/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-red-600 font-bold hover:text-red-700 transition text-lg"
@@ -137,7 +137,7 @@ export default function Articulos() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-l-8 border-orange-500">
               <div className="aspect-[16/9] overflow-hidden relative">
                 <img
-                  src="/articulos/centros-escucha.jpg"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763658224/maria_politica/centro_de_escucha_ieagap.png"
                   alt="Centros de escucha en Bogotá"
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
@@ -146,13 +146,13 @@ export default function Articulos() {
               <div className="p-8 md:p-10">
                 <div className="flex items-center gap-3 mb-6">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/El_Tiempo_logo.svg/512px-El_Tiempo_logo.svg.png"
-                    alt="El Tiempo"
+                    src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/logo-Partido-Politico-Dignidad-Compromiso_k4uys7.jpg"
+                    alt="Dignida_compromiso"
                     className="h-8 opacity-80"
                   />
                   <Calendar className="w-5 h-5 text-gray-500" />
                   <span className="text-sm text-gray-500">
-                    10 de octubre de 2025
+                    15 de octubre de 2025
                   </span>
                 </div>
 
@@ -170,7 +170,7 @@ export default function Articulos() {
                 </p>
 
                 <a
-                  href="https://www.eltiempo.com/bogota/centros-escucha-maria-del-pilar-2025"
+                  href="https://fundacion-fundabs.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-orange-600 font-bold hover:text-orange-700 transition text-lg"
@@ -191,13 +191,29 @@ export default function Articulos() {
             <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
               <iframe
                 className="w-full aspect-video"
-                src="https://www.youtube.com/embed/TU_VIDEO_ID_RELACIONADO" // Reemplaza con un video real de El Tiempo o tuyo
+                src="https://www.youtube.com/embed/DOxl9BtZfzU" // Reemplaza con un video real de El Tiempo o tuyo
                 title="Salud mental en crisis Bogotá"
                 allowFullScreen
               />
             </div>
             <p className="mt-4 text-gray-600">
-              Entrevista exclusiva con María del Pilar en El Tiempo TV
+              Entrevista exclusiva con María del Pilar en Canal Capital
+            </p>
+          </div>
+          <div className="mt-20 text-center">
+            <h3 className="text-3xl font-bold text-purple-900 mb-8">
+              Video: La Salud Menta y Su Importancia
+            </h3>
+            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/PCNqTbzvfWo" // Reemplaza con un video real de El Tiempo o tuyo
+                title="Salud mental en crisis Bogotá"
+                allowFullScreen
+              />
+            </div>
+            <p className="mt-4 text-gray-600">
+              Entrevista exclusiva con María del Pilar Bravisiomo
             </p>
           </div>
         </div>
