@@ -92,7 +92,7 @@ export default function Inscribirse() {
 
             {/* FORMULARIO CON FORMSUBMIT.CO – FUNCIONA PERFECTO */}
             <form
-              action="https://formsubmit.co/alvarodaza48@gmail.com"
+              action="https://formsubmit.co/fundacionbuensuceso@gmail.com"
               method="POST"
               onSubmit={() => setCargando(true)}
             >
