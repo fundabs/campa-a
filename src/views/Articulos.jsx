@@ -74,7 +74,7 @@ export default function Articulos() {
               {/* Imagen principal */}
               <div className="aspect-[16/9] overflow-hidden relative">
                 <img
-                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763657576/maria_politica/camara_publicacion_fg4r1g.png"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763662751/maria_politica/mindaliaradio_nekjwm.png"
                   alt="Salud mental en crisis Bogotá"
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
@@ -93,7 +93,7 @@ export default function Articulos() {
                   />
                   <Calendar className="w-5 h-5 text-gray-500" />
                   <span className="text-sm text-gray-500">
-                    05 de noviembre de 2024
+                    10 de octubre de 2022
                   </span>
                 </div>
 
@@ -122,7 +122,7 @@ export default function Articulos() {
                 </blockquote>
 
                 <a
-                  href="https://www.camara.gov.co/crisis-de-salud-mental-en-colombia-un-panorama-desalentador/"
+                  href="https://www.ivoox.com/control-adicciones-hipnosis-entrevista-a-maria-audios-mp3_rf_85095627_1.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-red-600 font-bold hover:text-red-700 transition text-lg"
@@ -197,6 +197,23 @@ export default function Articulos() {
             </div>
             <p className="mt-4 text-gray-600">
               Entrevista exclusiva con María del Pilar en Canal Capital
+            </p>
+          </div>
+          <div className="mt-20 text-center">
+            <h3 className="text-3xl font-bold text-purple-900 mb-8">
+              Video: Control de adicciones con hipnosis
+            </h3>
+            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/DReMWbGH0kc" // Reemplaza con un video real de El Tiempo o tuyo
+                title="Control de adicciones con hipnosis"
+                allowFullScreen
+              />
+            </div>
+            <p className="mt-4 text-gray-600">
+              Entrevista exclusiva con María del Pilar en Mindalia
+              Television.com
             </p>
           </div>
           <div className="mt-20 text-center">
