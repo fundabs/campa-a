@@ -37,7 +37,7 @@ export default function App() {
   return (
     <>
       {/* HERO PROFESIONAL */}
-      <header className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pb-16">
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden pb-16">
         {/* Video de fondo */}
         <video
           autoPlay

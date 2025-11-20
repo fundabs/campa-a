@@ -48,7 +48,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/public/ciudad_bolivar.jpg"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596055/maria_politica/ciudad_bolivar_ffgssd.jpg"
                   alt="Ciudad Bolívar"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -71,7 +71,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/public/anciedad.jpeg"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596057/maria_politica/anciedad_aii8vq.jpg"
                   alt="Kennedy"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -93,7 +93,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/public/emociones.jpeg"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/Imagen4_t7vyxb.png"
                   alt="Suba"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -114,7 +114,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/public/comunidad.jpeg"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596986/maria_politica/ignosis_gsg2gt.jpg"
                   alt="Bosa"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -135,7 +135,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/public/Imagen6.png"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/Imagen6_e90yov.png"
                   alt="Engativá"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -156,7 +156,7 @@ export default function SaludMental() {
             <article className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/public/mujeres empoderadas.jpg"
+                  src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596057/maria_politica/mujeres_empoderadas_on7b27.jpg"
                   alt="Teusaquillo"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
