@@ -354,7 +354,7 @@ export default function App() {
             <div className="flex flex-col items-center gap-10">
               {/* Foto principal */}
               <img
-                src="/foto_perfil.png"
+                src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596055/maria_politica/foto_perfil_so35z0.png"
                 className="rounded-3xl shadow-2xl w-full max-w-md border-4 border-white mb-5"
                 alt="María del Pilar - Candidata a la Cámara por Bogotá 2026"
               />
