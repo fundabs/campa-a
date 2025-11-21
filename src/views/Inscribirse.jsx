@@ -1,11 +1,14 @@
 // src/views/Inscribirse.jsx
 import { ArrowLeft, Heart, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 export default function Inscribirse() {
-  const [enviado] = useState(false);
+  const [enviado, setEnviado] = useState(false);
+  const [error, setError] = useState("");
   const [cargando, setCargando] = useState(false);
+
+  const navigate = useNavigate();
 
   const localidades = [
     "Antonio Nariño",
@@ -30,24 +33,58 @@ export default function Inscribirse() {
     "Usme",
   ];
 
-  // ÉXITO – Pantalla de gracias
+  // 🔥 MANEJO DE FORMULARIO
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setCargando(true);
+    setError("");
+
+    const formData = new FormData(e.target);
+
+    try {
+      const res = await fetch(
+        "https://formsubmit.co/fundacionbuensuceso@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!res.ok) {
+        throw new Error("No se pudo enviar el formulario");
+      }
+
+      setEnviado(true);
+
+      // 🔥 REDIRECCIÓN AUTOMÁTICA EN 3 SEGUNDOS
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
+    } catch {
+      setError("Hubo un problema al enviar el formulario. Intenta nuevamente.");
+    } finally {
+      setCargando(false);
+    }
+  };
+
+  // 🔥 PANTALLA DE ÉXITO
   if (enviado) {
     return (
       <section className="min-h-screen bg-gradient-to-br from-purple-900 to-orange-600 flex items-center justify-center px-6">
         <div className="bg-white rounded-3xl shadow-2xl p-12 text-center max-w-lg">
           <CheckCircle className="w-24 h-24 text-green-500 mx-auto mb-6" />
           <h2 className="text-4xl font-black text-purple-900 mb-4">
-            ¡Gracias por unirte!
+            ¡Formulario enviado con éxito!
           </h2>
           <p className="text-xl text-gray-700">
-            Ya eres parte del cambio con dignidad y compromiso.
+            Gracias por unirte. Serás redirigido al inicio en unos segundos...
           </p>
-          <p className="mt-6 text-lg">En breve te contactaremos</p>
+
           <Link
-            to="/"
+            to="/index.html"
             className="mt-10 inline-block bg-orange-500 text-white px-10 py-4 rounded-full font-bold hover:bg-orange-400 transition"
           >
-            Volver al inicio
+            Volver manualmente
           </Link>
         </div>
       </section>
@@ -82,7 +119,7 @@ export default function Inscribirse() {
         </div>
       </section>
 
-      {/* FORMULARIO – FUNCIONA 100% */}
+      {/* FORMULARIO */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6">
           <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
@@ -90,20 +127,15 @@ export default function Inscribirse() {
               Formulario de Inscripción
             </h2>
 
-            {/* FORMULARIO CON FORMSUBMIT.CO – FUNCIONA PERFECTO */}
-            <form
-              action="https://formsubmit.co/fundacionbuensuceso@gmail.com"
-              method="POST"
-              onSubmit={() => setCargando(true)}
-            >
+            {/* 🔥 MENSAJE DE ERROR */}
+            {error && (
+              <p className="text-center text-red-600 font-bold mb-6">{error}</p>
+            )}
+
+            <form onSubmit={handleSubmit}>
               {/* Anti-spam */}
               <input type="text" name="_honey" style={{ display: "none" }} />
               <input type="hidden" name="_captcha" value="false" />
-              <input
-                type="hidden"
-                name="_next"
-                value="http://localhost:5173/inscribirse"
-              />
               <input type="hidden" name="_template" value="table" />
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -115,7 +147,7 @@ export default function Inscribirse() {
                     type="text"
                     name="nombre"
                     required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500 focus:outline-none transition"
+                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                     placeholder="María Pérez"
                   />
                 </div>
@@ -128,7 +160,7 @@ export default function Inscribirse() {
                     type="text"
                     name="cedula"
                     required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500 focus:outline-none"
+                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                     placeholder="1234567890"
                   />
                 </div>
@@ -141,7 +173,7 @@ export default function Inscribirse() {
                     type="tel"
                     name="telefono"
                     required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500 focus:outline-none"
+                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                     placeholder="300 123 4567"
                   />
                 </div>
@@ -153,7 +185,7 @@ export default function Inscribirse() {
                   <input
                     type="email"
                     name="email"
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500 focus:outline-none"
+                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                     placeholder="maria@mail.com"
                   />
                 </div>
@@ -166,7 +198,7 @@ export default function Inscribirse() {
                     type="text"
                     name="direccion"
                     required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500 focus:outline-none"
+                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                     placeholder="Calle 123 #45-67"
                   />
                 </div>
@@ -178,7 +210,7 @@ export default function Inscribirse() {
                   <select
                     name="localidad"
                     required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500 focus:outline-none"
+                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                   >
                     <option value="">Selecciona tu localidad</option>
                     {localidades.map((loc) => (
@@ -194,7 +226,7 @@ export default function Inscribirse() {
                 <button
                   type="submit"
                   disabled={cargando}
-                  className="bg-orange-500 hover:bg-orange-400 text-purple-900 px-16 py-6 rounded-full text-2xl font-black shadow-2xl hover:scale-105 transition disabled:opacity-70"
+                  className="bg-orange-500 hover:bg-orange-400 text-purple-900 px-16 py-6 rounded-full text-2xl font-black shadow-2xl disabled:opacity-70"
                 >
                   {cargando ? "Enviando..." : "¡Inscribirme Ahora!"}
                 </button>
