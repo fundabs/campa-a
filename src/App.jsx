@@ -269,7 +269,7 @@ export default function App() {
               </h3>
 
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-                Egresada de la Universidad Nacional de Colombia, especialista en
+                Egresada de la Universitaria de Colombia, especialista en
                 hipnoterapia clínica y acompañamiento emocional. Más de 15 años
                 trabajando hombro a hombro con niños, jóvenes, madres cabeza de
                 familia y comunidades enteras de Bogotá.
