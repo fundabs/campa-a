@@ -340,7 +340,7 @@ export default function App() {
                     </strong>
                     <br />
                     <a
-                      href="https://www.youtube.com/watch?v=TU_VIDEO_ID"
+                      href="https://youtube.com/shorts/XlLTLlgI6nA?feature=share"
                       target="_blank"
                       className="text-orange-300 hover:text-orange-100 underline text-md font-semibold"
                     >
