@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "./componentes/footer";
+import Footer from "./componentes/Footer";
 import { Link } from "react-router-dom";
 
 import {
