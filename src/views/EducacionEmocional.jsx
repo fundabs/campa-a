@@ -1,3 +1,4 @@
+import Footer from "../componentes/Footer";
 // src/views/EducacionEmocional.jsx
 import {
   ArrowLeft,
@@ -209,18 +210,7 @@ export default function EducacionEmocional() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-purple-950 text-white py-12 text-center">
-        <p className="text-xl font-bold">María del Pilar García</p>
-        <p className="opacity-80">
-          Psicóloga • Candidata con Dignidad & Compromiso
-        </p>
-        <Link
-          to="/"
-          className="mt-6 inline-block text-orange-300 hover:text-orange-100 transition"
-        >
-          ← Volver al inicio
-        </Link>
-      </footer>
+      <Footer />
     </>
   );
 }

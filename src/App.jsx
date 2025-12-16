@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./componentes/footer";
 import { Link } from "react-router-dom";
 
 import {
@@ -437,18 +438,7 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-purple-950 text-white py-12">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <img
-            src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763596056/maria_politica/logo-Partido-Politico-Dignidad-Compromiso_k4uys7.jpg"
-            className="h-16 mx-auto mb-4"
-          />
-          <p className="text-xl mb-6">María del Pilar García • Bogotá 2026</p>
-          <p className="text-sm opacity-70">
-            Autorizado y pagado por la campaña María del Pilar García.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

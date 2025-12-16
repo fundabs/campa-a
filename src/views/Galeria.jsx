@@ -1,5 +1,6 @@
 // src/views/Galeria.jsx
 import { ArrowLeft, Camera, Heart, MapPin, Calendar } from "lucide-react";
+import Footer from "../componentes/Footer";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -181,17 +182,7 @@ export default function Galeria() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-purple-950 text-white py-12 text-center">
-        <p className="text-xl font-bold">
-          María del Pilar García • Bogotá 2026
-        </p>
-        <Link
-          to="/"
-          className="mt-6 inline-block text-orange-300 hover:text-orange-100 transition"
-        >
-          ← Volver al inicio
-        </Link>
-      </footer>
+      <Footer />
     </>
   );
 }
