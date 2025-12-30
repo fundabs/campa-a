@@ -10,6 +10,7 @@ import Articulos from "./views/Articulos";
 import Galeria from "./views/Galeria";
 import Inscribirse from "./views/Inscribirse";
 import ScrollToTop from "./componentes/ScrollToHash";
+import FamiliasCuidadoras from "./views/FamiliasCuidadoras";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/familias-cuidadoras" element={<FamiliasCuidadoras />} />
         <Route path="/salud-mental" element={<SaludMental />} />
         <Route path="/transparencia" element={<Transparencia />} />
         <Route path="/educacion-emocional" element={<EducacionEmocional />} />

@@ -3,18 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./componentes/Footer";
 import { Link } from "react-router-dom";
+import SanarColombia from "./componentes/SanarColombia";
 
-import {
-  Heart,
-  Youtube,
-  Newspaper,
-  Camera,
-  PlayCircle,
-  ArrowRight,
-  Users,
-  Brain,
-  Shield,
-} from "lucide-react";
+import { Newspaper, Camera, PlayCircle } from "lucide-react";
 
 export default function App() {
   // Inicializar AOS (animaciones de scroll)
@@ -186,73 +177,7 @@ export default function App() {
       </nav>
 
       {/* PROPUESTAS */}
-      <section id="propuestas" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2
-            className="text-4xl md:text-6xl font-black text-center text-purple-900 mb-20"
-            data-aos="fade-up"
-          >
-            Mi Plan para Bogotá
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10" id="SaludMental">
-            {[
-              {
-                icon: Brain,
-                title: "Salud Mental para Todos",
-                desc: "Centros de escucha gratuitos en cada localidad...",
-                link: "/salud-mental",
-                delay: 0,
-              },
-              {
-                icon: Shield,
-                title: "Transparencia Absoluta",
-                desc: "Plataformas digitales de rendición de cuentas...",
-                link: "/Transparencia",
-                delay: 150,
-              },
-              {
-                icon: Users,
-                title: "Educación Emocional",
-                desc: "Talleres integrados en colegios y empresas...",
-                link: "/educacion-emocional",
-                delay: 300,
-              },
-            ].map((p, i) => (
-              <div
-                key={i}
-                className="group bg-gray-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all"
-                data-aos="fade-up"
-                data-aos-delay={p.delay}
-              >
-                <div className="mb-8 text-center">
-                  <p.icon className="w-20 h-20 mx-auto text-orange-500 group-hover:scale-110 group-hover:rotate-6 transition-all" />
-                </div>
-
-                <h3 className="text-2xl font-black text-center text-purple-900 mb-6">
-                  {p.title}
-                </h3>
-
-                <p className="text-gray-700 text-center leading-relaxed">
-                  {p.desc}
-                </p>
-
-                {/* Botón Saber más solo si existe link */}
-                {p.link && (
-                  <div className="mt-8 text-center opacity-0 group-hover:opacity-100 transition">
-                    <Link
-                      to={p.link}
-                      className="text-orange-500 font-bold flex items-center justify-center gap-2"
-                    >
-                      Saber más <ArrowRight className="w-5 h-5" />
-                    </Link>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SanarColombia />
 
       {/* TRAYECTORIA */}
       <section id="trayectoria" className="py-28 bg-gray-50">

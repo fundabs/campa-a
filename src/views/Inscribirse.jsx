@@ -151,20 +151,6 @@ export default function Inscribirse() {
                     placeholder="María Pérez"
                   />
                 </div>
-
-                <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-2">
-                    Cédula *
-                  </label>
-                  <input
-                    type="text"
-                    name="cedula"
-                    required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
-                    placeholder="1234567890"
-                  />
-                </div>
-
                 <div>
                   <label className="block text-lg font-semibold text-gray-700 mb-2">
                     Teléfono / WhatsApp *
@@ -187,19 +173,6 @@ export default function Inscribirse() {
                     name="email"
                     className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
                     placeholder="maria@mail.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-2">
-                    Dirección *
-                  </label>
-                  <input
-                    type="text"
-                    name="direccion"
-                    required
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 focus:border-orange-500"
-                    placeholder="Calle 123 #45-67"
                   />
                 </div>
 
