@@ -233,7 +233,7 @@ export default function FamiliasCuidadorasModelo() {
               to="/inscribirse"
               className="inline-block bg-orange-500 hover:bg-orange-400 text-purple-900 px-14 py-6 rounded-full text-2xl font-black shadow-2xl hover:scale-105 transition"
             >
-              Quiero Ser Familia Cuidadora
+              Quiero ser parte del programa
             </Link>
           </div>
         </div>
