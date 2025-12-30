@@ -73,10 +73,6 @@ export default function Galeria() {
       {/* HERO DE LA GALERÍA */}
       <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-purple-900 via-purple-800 to-orange-700 text-white">
         <div className="absolute inset-0 bg-black/40" />
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: "url('/galeria/portada.jpg')" }}
-        />
 
         <div className="relative z-10 max-w-5xl mx-auto">
           <Link

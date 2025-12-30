@@ -18,10 +18,6 @@ export default function Transparencia() {
       {/* HERO IMPACTANTE */}
       <section className="relative min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-br from-purple-900 via-purple-800 to-orange-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/50" />
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: "url('/transparencia-hero.jpg')" }} // opcional: pon una foto tuya con documentos o gente revisando datos
-        />
 
         <div className="relative z-10 max-w-5xl mx-auto pt-10">
           <Link
