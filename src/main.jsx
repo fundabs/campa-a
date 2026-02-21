@@ -15,7 +15,7 @@ import InclusionLaboral from "./componentes/InclusionLaboral";
 import MediacionPsicosocial from "./componentes/MediacionPsicosocial";
 import RedHospitalariaPsicosocial from "./componentes/RedHospitalariaPsicosocial";
 import TenenciaResponsableMascotas from "./componentes/TenenciaResponsableMascotas";
-import DignidadLaboralArtistas from "./componentes/DignidadLaboralArtistas";
+import DignidadLaboralArtistas from "./views/DignidadLaboralArtistas";
 import ControlPoliticoCiudadano from "./views/ControlPoliticoCiudadano";
 import EducacionJovenes from "./views/EducacionJovenes";
 import SeguridadCiudadana from "./views/SeguridadCiudadana";
