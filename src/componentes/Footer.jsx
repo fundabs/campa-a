@@ -79,6 +79,15 @@ export default function Footer() {
               derechos reservados.
             </p>
           </div>
+          <a
+            className="opacity-70 text-sm absolute bottom-4 right-6"
+            href="https://protechsolucionesplus.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Protech Soluciones Plus"
+          >
+            protechsolucionesplus.com
+          </a>
         </div>
       </footer>
     </>
