@@ -3,7 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./componentes/Footer";
 import { Link } from "react-router-dom";
+import TarjetonCamara from "./componentes/Tarjeton";
 import SanarColombia from "./componentes/SanarColombia";
+import CuidadoAnimal from "./componentes/CuidadoAnimal";
 
 import { Newspaper, Camera, PlayCircle } from "lucide-react";
 
@@ -19,8 +21,8 @@ export default function App() {
 
   // --- Declara la lista de videos AQUÍ (antes del return) ---
   const videos = [
-    "https://www.youtube.com/embed/9yd0dQ10t0g",
-    "https://www.youtube.com/embed/vtFjFbmEEIY",
+    "https://res.cloudinary.com/dl7kjajkv/video/upload/v1771639306/WhatsApp_Video_2026-02-16_at_6.33.23_AM_cd0nkn.mp4",
+    "https://res.cloudinary.com/dl7kjajkv/video/upload/v1771639504/WhatsApp_Video_2026-02-13_at_9.40.32_PM_gzvye0.mp4",
     "https://www.youtube.com/embed/JNvyKsKNOA8",
     "https://www.youtube.com/embed/71AWW0GcqII",
     "https://www.youtube.com/embed/OYaLoRu8bBg",
@@ -175,10 +177,10 @@ export default function App() {
           ))}
         </div>
       </nav>
-
+      <TarjetonCamara />
       {/* PROPUESTAS */}
       <SanarColombia />
-
+      <CuidadoAnimal />
       {/* TRAYECTORIA */}
       <section id="trayectoria" className="py-28 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -292,7 +294,7 @@ export default function App() {
                 alt="Trabajo comunitario en Bogotá"
               />
               <img
-                src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1763655720/maria_politica/tratamiento_n_kcrehq.png"
+                src="https://res.cloudinary.com/dl7kjajkv/image/upload/v1771638954/imagen1_i3te8b.jpg"
                 className="rounded-3xl shadow-xl w-full max-w-md border-4 border-white object-cover"
                 alt="Trabajo comunitario en Bogotá"
               />

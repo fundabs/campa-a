@@ -10,10 +10,66 @@ export default function Galeria() {
   // Aquí pones TODAS tus fotos de la campaña (solo cambia las rutas y descripciones)
   const fotos = [
     {
-      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1763837762/maria_politica/WhatsApp_Image_2025-11-21_at_2.51.04_PM_1_ivb7ch.jpg",
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771639735/WhatsApp_Image_2026-02-17_at_4.10.00_PM_smbqkh.jpg",
       alt: "Evento en Kennedy",
       lugar: "Kennedy",
       fecha: "15 nov 2025",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771639897/WhatsApp_Image_2026-02-17_at_5.27.02_PM_foeb0w.jpg",
+      alt: "Colombia adelante",
+      lugar: "bogota",
+      fecha: "26 02 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771640073/WhatsApp_Image_2026-02-12_at_8.23.37_AM_wqnztr.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "12 02 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771639979/WhatsApp_Image_2026-02-12_at_9.20.44_AM_wklx7h.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "12 02 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771640143/WhatsApp_Image_2026-02-04_at_6.36.29_PM_mzburc.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "12 02 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771640205/WhatsApp_Image_2026-02-12_at_8.23.37_AM_lp1zwh.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "12 02 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771640306/WhatsApp_Image_2026-01-30_at_9.23.28_AM_enqj7c.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "12 02 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771640377/WhatsApp_Image_2026-02-04_at_6.36.28_PM_wvjmi3.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "feb 2026",
+      descripcion: "Más de 800 personas en el gran encuentro comunitario",
+    },
+    {
+      src: "https://res.cloudinary.com/dl7kjajkv/image/upload/v1771640503/WhatsApp_Image_2026-01-29_at_7.23.51_AM_plgser.jpg",
+      alt: "Todo por la salud Mental",
+      lugar: "bogota",
+      fecha: "feb 2026",
       descripcion: "Más de 800 personas en el gran encuentro comunitario",
     },
     {
