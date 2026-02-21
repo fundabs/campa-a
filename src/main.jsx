@@ -10,7 +10,15 @@ import Articulos from "./views/Articulos";
 import Galeria from "./views/Galeria";
 import Inscribirse from "./views/Inscribirse";
 import ScrollToTop from "./componentes/ScrollToHash";
-import FamiliasCuidadoras from "./views/FamiliasCuidadoras";
+import FamiliasCuidadoras from "./componentes/FamiliasCuidadoras";
+import InclusionLaboral from "./componentes/InclusionLaboral";
+import MediacionPsicosocial from "./componentes/MediacionPsicosocial";
+import RedHospitalariaPsicosocial from "./componentes/RedHospitalariaPsicosocial";
+import TenenciaResponsableMascotas from "./componentes/TenenciaResponsableMascotas";
+import DignidadLaboralArtistas from "./componentes/DignidadLaboralArtistas";
+import ControlPoliticoCiudadano from "./views/ControlPoliticoCiudadano";
+import EducacionJovenes from "./views/EducacionJovenes";
+import SeguridadCiudadana from "./views/SeguridadCiudadana";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -19,14 +27,37 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/familias-cuidadoras" element={<FamiliasCuidadoras />} />
+        <Route path="/familiasCuidadoras" element={<FamiliasCuidadoras />} />
         <Route path="/salud-mental" element={<SaludMental />} />
         <Route path="/transparencia" element={<Transparencia />} />
         <Route path="/educacion-emocional" element={<EducacionEmocional />} />
         <Route path="/articulos" element={<Articulos />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/inscribirse" element={<Inscribirse />} />
+        <Route path="/inclusionLaboral" element={<InclusionLaboral />} />
+        <Route
+          path="/mediacionPsicosocial"
+          element={<MediacionPsicosocial />}
+        />
+        <Route
+          path="/redHospitalariaPsicosocial"
+          element={<RedHospitalariaPsicosocial />}
+        />
+        <Route
+          path="/tenenciaResponsableMascotas"
+          element={<TenenciaResponsableMascotas />}
+        />
+        <Route
+          path="/dignidadLaboralArtistas"
+          element={<DignidadLaboralArtistas />}
+        />
+        <Route
+          path="/controlPoliticoCiudadano"
+          element={<ControlPoliticoCiudadano />}
+        />
+        <Route path="/educacionJovenes" element={<EducacionJovenes />} />
+        <Route path="/seguridadCiudadana" element={<SeguridadCiudadana />} />
       </Routes>
     </HashRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
