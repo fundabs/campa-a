@@ -193,7 +193,7 @@ export default function App() {
             {/* COLUMNA IZQUIERDA – TEXTO */}
             <div className="flex flex-col justify-center">
               <h3 className="text-3xl md:text-4xl font-bold text-purple-900 mb-6">
-                Psicóloga Clínica • Matrícula Profesional 3204011554
+                Psicóloga Clínica
               </h3>
 
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
